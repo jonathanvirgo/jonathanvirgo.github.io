@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/nomarlize.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kol Network</title>
+    <style>
+        .block{
+        display: block;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <a href="#" style="text-decoration: none;">
                 <div class="brand">
                     <div class="brand-item brand-item-1">
@@ -27,12 +34,12 @@
                 </div>
             </a>
             <nav class="mainnav">
-                <div class="navbar-toggle">
+                <button class="navbar-toggle" onclick="menu()">
                     <span>
                         <span class="button__menu"></span>
                     </span>
-                </div>
-                <div class="mainnav-collapse">
+                </button>
+                <div class="mainnav-collapse" id = "nav_right">
                     <div class="mainnav-item">
                         <a href="#">Tìm kiếm KOL</a>
                     </div>
@@ -71,6 +78,31 @@
             </nav>
         </div>
     </header>
+    <section class="noi_bat">
+        <div class="container-fluid row">
+            <div class="noi_bat-phai col-6">
+                <div class="row">
+                    <div class="col-4 noi_bat-phai-1">
+                            <img src="img/image_25.png" alt="Nhận định xu hướng thị trường">
+                        <div>
+                            <p>Nhận định xu hướng thị trường KOLs 2020</p>
+                        </div>
+                    </div>
+                    <div class="col-6 noi_bat-phai-2"></div>
+                </div>
+            </div>
+            <div class="noi_bat-trai col-4">
+                <div class="row">
+                    <div class="col-5">
+    
+                    </div>
+                    <div class="col-5">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/index.js"></script>
 </body>
 
