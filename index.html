@@ -5,104 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kol Network</title>
     <style>
-        .block{
-        display: block;
+        .block {
+            display: block;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <a href="#" style="text-decoration: none;">
-                <div class="brand">
-                    <div class="brand-item brand-item-1">
-                        <img src="img/logoweb-white.png" alt="ad">
-                    </div>
-                    <div class="brand-item brand-item-2">
-                        <div></div>
-                    </div>
-                    <div class="brand-item brand-item-3">
-                        <span> KOLs NETWORK</span>
-                    </div>
-                </div>
-            </a>
-            <nav class="mainnav">
-                <button class="navbar-toggle" onclick="menu()">
-                    <span>
-                        <span class="button__menu"></span>
-                    </span>
-                </button>
-                <div class="mainnav-collapse" id = "nav_right">
-                    <div class="mainnav-item">
-                        <a href="#">Tìm kiếm KOL</a>
-                    </div>
-                    <div class="mainnav-item mainnav-item-westream we_stream">
-                        <a href="#">We Stream <img src="img/icon_down.png"></a>
-                        <div class="sub_menu">
-                            <div><a href="#">Tin tức</a></div>
-                            <div><a href="#">Case Study</a></div>
-                            <div><a href="#">Trending</a></div>
-                            <div><a href="#">Reports</a></div>
+    <div class="page-wrapper">
+        <header>
+            <div class="container-fluid">
+                <a href="#" style="text-decoration: none;">
+                    <div class="brand">
+                        <div class="brand-item brand-item-1">
+                            <img src="img/logoweb-white.png" alt="ad">
+                        </div>
+                        <div class="brand-item brand-item-2">
+                            <div></div>
+                        </div>
+                        <div class="brand-item brand-item-3">
+                            <span> KOLs NETWORK</span>
                         </div>
                     </div>
-                    <div class="mainnav-item">
-                        <a href="#">Khách hàng</a>
-                    </div>
-                    <div class="mainnav-item">
-                        <a href="#">Về Admicro</a>
-                    </div>
-                    <div class="mainnav-item">
-                        <a href="#">Liên hệ</a>
-                    </div>
-                    <div class="mainnav-item">
-                        <div class="mainnav-item-phone">
-                            <div>
-                                <img src="img/phone.png" alt="phone">
+                </a>
+                <nav class="mainnav">
+                    <button class="navbar-toggle" onclick="menu()">
+                        <span>
+                            <span class="button__menu"></span>
+                        </span>
+                    </button>
+                    <div class="mainnav-collapse" id="nav_right">
+                        <div class="mainnav-item">
+                            <a href="#">Tìm kiếm KOL</a>
+                        </div>
+                        <div class="mainnav-item mainnav-item-westream we_stream">
+                            <a href="#">We Stream <img src="img/icon_down.png"></a>
+                            <div class="sub_menu">
+                                <div><a href="#">Tin tức</a></div>
+                                <div><a href="#">Case Study</a></div>
+                                <div><a href="#">Trending</a></div>
+                                <div><a href="#">Reports</a></div>
                             </div>
-                            <span>0987654321</span>
                         </div>
-                        
-                    </div>
-                    <!-- <div class="mainnav-item" id="phan_cach"></div> -->
-                    <div class="mainnav-item mainnav-dangnhap">
-                        <a href="#">Đăng nhập</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="noi_bat">
-        <div class="container-fluid row">
-            <div class="noi_bat-phai col-6">
-                <div class="row">
-                    <div class="col-4 noi_bat-phai-1">
-                            <img src="img/image_25.png" alt="Nhận định xu hướng thị trường">
-                        <div>
-                            <p>Nhận định xu hướng thị trường KOLs 2020</p>
+                        <div class="mainnav-item">
+                            <a href="#">Khách hàng</a>
                         </div>
-                    </div>
-                    <div class="col-6 noi_bat-phai-2"></div>
-                </div>
-            </div>
-            <div class="noi_bat-trai col-4">
-                <div class="row">
-                    <div class="col-5">
-    
-                    </div>
-                    <div class="col-5">
+                        <div class="mainnav-item">
+                            <a href="#">Về Admicro</a>
+                        </div>
+                        <div class="mainnav-item">
+                            <a href="#">Liên hệ</a>
+                        </div>
+                        <div class="mainnav-item">
+                            <div class="mainnav-item-phone">
+                                <div>
+                                    <img src="img/phone.png" alt="phone">
+                                </div>
+                                <span>0987654321</span>
+                            </div>
 
+                        </div>
+                        <!-- <div class="mainnav-item" id="phan_cach"></div> -->
+                        <div class="mainnav-item mainnav-dangnhap">
+                            <a href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="noi_bat">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="noi_bat-phai col-xl-7">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 noi_bat-phai-1">
+                                <img class="img-fluid" src="img/image_25.png" alt="Nhận định xu hướng thị trường">
+                                <div>
+                                    <p>Nhận định xu hướng thị trường KOLs 2020</p>
+                                </div>
+                            </div>
+                            <div class="col-md-7 noi_bat-phai-2">
+                                <div class="row no-gutters">
+                                    <div class="col-12 mb-6px noi_bat-phai-item noi_bat-phai-item1">
+                                        <img class="img-fluid" src="img/image 18.png"
+                                            alt="Nhận định xu hướng thị trường">
+                                        <div>
+                                            <p>Sức mạnh của Kols Marketing trong xây dựng thương hiệu sản phẩm</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 noi_bat-phai-item noi_bat-phai-item2">
+                                        <img class="img-fluid" src="img/image 24.png"
+                                            alt="Nhận định xu hướng thị trường">
+                                        <div class="item-nd1">
+                                            <div class="nd1-1">
+                                                <p style="font-size: 15px;">Uống Pepsi gặp Sơn Tùng - MTP</p>
+                                            </div>
+                                            <div class="nd1-2">
+                                                <div class="case">
+                                                    <p>Case Study</p>
+                                                </div>
+                                                <p style="padding: 3px;">Kols: Sơn Tùng - MTP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 noi_bat-phai-item noi_bat-phai-item3">
+                                        <img class="img-fluid" src="img/image 15.png"
+                                            alt="Nhận định xu hướng thị trường">
+                                        <div>
+                                            <p>Top KOLs có sức ảnh hưởng nhất trong cộng đồng mạng Việt Nam năm 2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="noi_bat-trai col-xl-5">
+                        <div class="row no-gutters">
+                            <div class="col-6 noi_bat-trai-1">
+                                <img class="img-fluid" src="img/image 17.png" alt="Nhận định xu hướng thị trường">
+                                <img class="noi_bat-trai-logo" src="img/logo admicro 1.png" alt="">
+                                <div>
+                                    <img style="float: left;" src="img/vt_anh.png" alt="">
+                                    <p>Hội nghị KOLs - Admicro <br /> Những hình ảnh và sự kiện nổi bật</p>
+                                </div>
+                            </div>
+                            <div class="col-6 noi_bat-trai-2">
+                                <img class="img-fluid" src="img/image 27.png" alt="Nhận định xu hướng thị trường">
+                                <div>
+                                    <p>5S trong xây dựng thương hiệu vượt ra <br /> ngoài yếu tố sản phẩm</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 
