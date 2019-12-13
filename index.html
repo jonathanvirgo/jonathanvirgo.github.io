@@ -9,11 +9,37 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <title>Kol Network</title>
     <style>
         .block {
             display: block;
         }
+        .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
     </style>
 </head>
 
@@ -114,12 +140,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 noi_bat-phai-item noi_bat-phai-item3">
-                                        <img class="img-fluid" src="img/image 15.png"
-                                            alt="Nhận định xu hướng thị trường">
-                                        <div>
-                                            <p>Top KOLs có sức ảnh hưởng nhất trong cộng đồng mạng Việt Nam năm 2019</p>
-                                        </div>
+                                    <div class="col-8 noi_bat-phai-item">
+                                        <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-css-mode">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide" >Slide 1</div>
+                                              <div class="swiper-slide" >Slide 2</div>
+                                              <div class="swiper-slide" >Slide 3</div>
+                                              <div class="swiper-slide" >Slide 4</div>
+                                              <div class="swiper-slide" >Slide 5</div>
+                                              <div class="swiper-slide" >Slide 6</div>
+                                              <div class="swiper-slide" >Slide 7</div>
+                                              <div class="swiper-slide swiper-slide-prev" >Slide 8</div>
+                                              <div class="swiper-slide swiper-slide-active" >Slide 9</div>
+                                              <div class="swiper-slide swiper-slide-next" >Slide 10</div>
+                                            </div>
+                                           
+                                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+                                            
+                                            <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +171,7 @@
                                 <img class="img-fluid" src="img/image 17.png" alt="Nhận định xu hướng thị trường">
                                 <img class="noi_bat-trai-logo" src="img/logo admicro 1.png" alt="">
                                 <div>
-                                    <img style="float: left;" src="img/vt_anh.png" alt="">
+                                    <img class = "khoi4-logo-2" src="img/vt_anh.png" alt="">
                                     <p>Hội nghị KOLs - Admicro <br /> Những hình ảnh và sự kiện nổi bật</p>
                                 </div>
                             </div>
@@ -148,8 +188,9 @@
             </div>
         </section>
     </div>
-
+    <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
+    
 </body>
 
 </html>
