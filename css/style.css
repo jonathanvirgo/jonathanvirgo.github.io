@@ -10,7 +10,9 @@
 input:focus,
 select:focus,
 textarea:focus,
-button:focus{
+button:focus,
+.swiper-button-next:focus,
+.swiper-button-prev:focus{
     outline: none;
 }
 .page-wrapper {
@@ -335,7 +337,7 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     text-align: center;
     font-size: 21px;
     text-transform:uppercase;
-    margin:1.2em auto; 
+    margin: 2em auto; 
 }
 .filter .text_box1,.filter .text_box3{
     border-radius: 50px;
@@ -371,7 +373,7 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     width: 320px;
     height: 44px;
     background: linear-gradient(324.84deg, #3CA798 32.14%, #59BB81 90.69%);
-    margin: 20px auto 56px;
+    margin: 30px auto 50px;
     border-radius: 50px;
     border: none;
     display: flex;
@@ -385,6 +387,220 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     margin-left: 6px;
 }
 /* } Hết Lọc */
+.tieu-bieu{
+    margin: 60px auto 58px;
+    font-family: 'Quicksand', sans-serif;
+}
+.tieu-bieu > p{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.slide2{
+    height: 290px;
+    margin: 40px auto 58px;
+    position: relative;
+}
+.tieu-bieu .swiper-button-next2::after{
+    display: none;
+}
+.swiper-button-next2{
+    right:-44px !important;
+    top: 100px !important;
+}
+.tieu-bieu .idol .grandient{
+    width: 191px;
+    height: 191px;
+    background: linear-gradient(324.84deg, #3CA798 32.14%, #59BB81 90.69%);
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+.tieu-bieu .grandient >img{
+    position: absolute;
+    border-radius: 50%;
+    width: 183px;
+    height: 183px;
+    border: 2px solid #fff;
+    top:6px;
+    left: 6px;
+}
+.tieu-bieu .idol >p{
+    text-align: center;
+}
+.tieu-bieu .idol .ten_cs{
+    font-weight: bold;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.tieu-bieu .idol .thong_tin_cs{
+    margin-top: 7px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.3;
+}   
+/* Hết Tiêu biểu */
+.hoat-dong{
+    background: #F5F5F5;
+    font-family: 'Quicksand', sans-serif;
+}
+.hoat-dong .container > p{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 43px;
+}
+.hoat-dong .hd_tren, .hoat-dong .hd_duoi{
+    position: relative;
+}
+
+.hoat-dong .tren, .hoat-dong .duoi{
+    width: 200px;
+    height: 225px;
+    position: relative;
+    z-index: 10;
+}
+.hoat-dong .tren .chu{
+    font-size: 15px;
+    line-height: 1.6;
+}
+.hoat-dong .line{
+    position: relative;
+}
+.hoat-dong .line > div{
+    display: flex;
+}
+.hoat-dong .line1{
+    position: absolute;
+    opacity: 0.5;
+    /* width: 100%; */
+}
+.hoat-dong .line1 + img{
+    position: absolute;
+    right: -10px;
+    top: -4px;
+}
+.hinh_tron{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(90deg, #EEA50C 0%, #EE6B0C 103.05%);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 8px;
+}
+.tron_nho{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(90deg, #EEA50C 0%, #EE6B0C 103.05%);
+    border-radius: 10px;
+    z-index: 10;
+    bottom: 25px;
+}
+.line .t10{
+    top: -14px;
+    left: -16px;
+}
+.line .t11{
+    top: -14px;
+    left: 358px;
+}
+.line .t12{
+    top: -14px;
+    left: 700px;
+}
+.hd_duoi > div{
+    z-index: 10;
+}
+.hd_duoi .chu{
+    line-height: 1.6;
+    font-size: 15px;
+}
+.cac-diem > div{
+    position: relative;
+}
+.hoat-dong .tron_nho + img{
+    position: absolute;
+}
+.hoat-dong .nho1 > div{ left: 85px;}
+.hoat-dong .nho1 > img{
+    left: 90px;
+    bottom: 30px;
+}
+.hd_tren .tren1{ margin-left: 62px;}
+
+.hoat-dong .nho2 > div{ left: 138px;}
+.hoat-dong .nho2 > img{
+    left: 142px;
+    top: 7px;
+}
+.hd_duoi .duoi1{ 
+    left: 116px;
+}
+.hoat-dong .nho3 > div{ left: 338px;}
+.hoat-dong .nho3 > img{
+    left: 343px;
+    bottom: 30px;
+}
+.hd_tren .tren2{ 
+    position: absolute;
+    left: 316px;
+    top: 0px;
+}
+.hoat-dong .nho4 > div{ left: 530px;}
+.hoat-dong .nho4 > img{
+    left: 535px;
+    top: 7px;
+}
+.hd_duoi .duoi2{ 
+    position: absolute;
+    left: 543px;
+    top: 0px;
+}
+.hoat-dong .nho5 > div{ left: 663px;}
+.hoat-dong .nho5 > img{
+    left: 668px;
+    bottom: 30px;
+}
+.hd_tren .tren3{ 
+    position: absolute;
+    left: 673px;
+    top: 0px;
+}
+.hoat-dong .nho6 > div{ left: 750px;}
+.hoat-dong .nho6 > img{
+    left: 755px;
+    top: 7px;
+}
+.hd_duoi .duoi3{ 
+    position: absolute;
+    left: 794px;
+    top: 0px;
+}
+.hoat-dong .nho7 > div{ left: 957px;}
+.hoat-dong .nho7 > img{
+    left: 962px;
+    top: 7px;
+}
+.hd_duoi .duoi4{ 
+    position: absolute;
+    left: 1002px;
+    top: 0px;
+}
+.nd-hd{
+    margin-bottom: 68px;
+}
+.nd-hd + button {
+    margin: auto;
+    position: relative;
+    top: -52px;
+}
+/* Hết hoạt động */
 .grandient_text{
     background: linear-gradient(324.84deg, #3CA798 32.14%, #59BB81 90.69%);
     -webkit-background-clip: text;
@@ -433,7 +649,7 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     margin: 0 10px;
     width: 40px;
     height: 5px;
-    /* background: #EBEBEB; */
+    background: #4c3e3e;
     border-radius: 6px;
 }
 .swiper-pagination3 .swiper-pagination-bullet-active{
@@ -738,6 +954,16 @@ footer .logo2{
     .case-study .chi-so-2{
         margin-top: 10px;
     }
+    .swiper-pagination3 .swiper-pagination-bullet{
+        margin: 0 2px;
+        width: 20px;
+    }
+    .hoat-dong .nho4, .hoat-dong .nho3{
+        display: none;
+    }
+    .hd_tren .tren2, .hd_duoi .duoi2, .t11{ 
+        display: none;
+    }
 }
 @media only screen and (max-width: 768px){
     .case-study .slide4{
@@ -755,6 +981,12 @@ footer .logo2{
     .case-study .img-case{
         height: 100%;
     }
+    .hoat-dong .nho5, .hoat-dong .nho6, .hoat-dong .nho7{ 
+        display: none;
+    }
+    .hd_tren .tren3, .hd_duoi .duoi3, .hd_duoi .duoi4{ 
+        display: none;
+    }
 }
 @media only screen and (max-width: 1024px){
     .filter .input-2{
@@ -768,6 +1000,9 @@ footer .logo2{
     }
     .case-study .tt-chinh{
         width: 100%;
+    }
+    .hoat-dong .line1 + img {
+        right: -47px;
     }
 }
 @media only screen and (max-width: 1999px){

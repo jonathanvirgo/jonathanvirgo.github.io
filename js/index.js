@@ -28,6 +28,30 @@ var swiper1 = new Swiper('.swiper-container1', {
     prevEl: '.swiper-button-prev1',
   },
 });
+var swiper2 = new Swiper('.swiper-container2', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  // init: false,
+  navigation: {
+    nextEl: '.swiper-button-next2',
+    // prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+  }
+});
 var swiper3 = new Swiper('.swiper-container3', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -44,15 +68,15 @@ var swiper3 = new Swiper('.swiper-container3', {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 40,
     },
   }
 });
