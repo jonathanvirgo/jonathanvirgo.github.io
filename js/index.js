@@ -84,7 +84,7 @@ $(document).ready(function(){
 var swiper1 = new Swiper('.swiper-container1', {
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: true,
+  // loop: true,
   pagination: {
     el: '.swiper-pagination1',
     clickable: true,
@@ -97,7 +97,7 @@ var swiper1 = new Swiper('.swiper-container1', {
 var swiper2 = new Swiper('.swiper-container2', {
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: true,
+  // loop: true,
   // init: false,
   navigation: {
     nextEl: '.swiper-button-next2',
@@ -121,7 +121,7 @@ var swiper2 = new Swiper('.swiper-container2', {
 var swiper3 = new Swiper('.swiper-container3', {
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: true,
+  // loop: true,
   // init: false,
   pagination: {
     el: '.swiper-pagination3',
@@ -149,7 +149,7 @@ var swiper3 = new Swiper('.swiper-container3', {
 var swiper4 = new Swiper('.swiper-container4', {
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: true,
+  // loop: true,
   pagination: {
     el: '.swiper-pagination4',
     clickable: true,

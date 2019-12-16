@@ -775,35 +775,30 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     margin-top: 11px;
 }
 .workshop .bt-trang{
-    background: linear-gradient(351.8deg, #3CA798 32.14%, #59BB81 90.69%);
     height: 33px;
     width: 144px;
     border-radius: 50px;
-    border: none;
-    display: block;
+    display: flex;
+    background: #fff;
+    border: 2px solid #3CA798;
+    justify-content: center;
 }
-.workshop .bt-trang .nen-trang{
+/* .workshop .bt-trang .nen-trang{
     background: #ffffff;
     width: calc(100% - 4px);
     height: calc(100% - 4.7px);
     border-radius: 50px;
     position: absolute;
-    bottom: 2.7px;
-    left: 1.7px;
+    bottom: 2.6px;
+    left: 2px;
+} */
+.workshop .bt-trang > img{
+    margin-right: 8px;
 }
-.workshop .chu > img{
-    position: absolute;
-    top: 8.93px;
-    left: 13px;
-    z-index: 2;
-}
-.workshop .chu > p{
-    font-weight: bold;
+.workshop .bt-trang > p{
     font-size: 14px;
     color: #1A9483;
-    position: absolute;
-    right: 9px;
-    top: 8px;
+    font-weight: bold;
 }
 .workshop .bt-mau{
     background: linear-gradient(351.8deg, #3CA798 32.14%, #59BB81 90.69%);
@@ -1018,123 +1013,6 @@ footer .logo2{
 .pl-12{
     padding-left: 12px !important;
 }
-/* Mobile */
-@media only screen and (max-width: 1023px){
-    .navbar-toggle {
-        display: block;
-    }
-    .mainnav {
-        position: relative;
-    }
-    .mainnav-collapse {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #3CA798 ;
-    }
-    .mainnav-item a{
-        color: #fff;
-    }
-    .mainnav-item .sub_menu{
-        left: -121px;
-        top: 0px;
-    }
-}
-
-@media only screen and (max-width: 320px){
-    .filter .button_1{
-        width: 60%;
-    }
-    .xem{
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 375px){
-    footer .chinh-sach li {
-        padding: 6px;
-    }
-}
-@media only screen and (max-width: 425px){
-    footer .dang-ky input {
-        width: 100%;
-    }
-    footer .dang-ky .button1 {
-        width: 50%;
-    }
-    .case-study .img-case{
-        height: 90%;
-    }
-    .case-study .slide4{
-        height: 890px !important;
-    }
-    .case-study .chi-so-2{
-        margin-top: 10px;
-    }
-    .swiper-pagination3 .swiper-pagination-bullet{
-        margin: 0 2px;
-        width: 20px;
-    }
-    /* .hoat-dong .nho4, .hoat-dong .nho3{
-        display: none;
-    }
-    .hd_tren .tren2, .hd_duoi .duoi2, .t11{ 
-        display: none;
-    } */
-}
-@media only screen and (max-width: 768px){
-    .case-study .slide4{
-        height: 800px;
-    }
-    .case-study .thong-tin{
-        padding-left: 15px !important;
-    }
-    .case-study .thong-tin .chien-dich{
-        margin-top: 10px !important;
-    }
-    .case-study .nd-sl1{
-        height: 400px;
-    }
-    .case-study .img-case{
-        height: 100%;
-    }
-    .filter .input-2{
-        margin:30px auto 10px;
-    }
-    .loc-1{
-        padding-right: 0px !important;
-    }
-    /* .hoat-dong .nho5, .hoat-dong .nho6, .hoat-dong .nho7{ 
-        display: none;
-    }
-    .hd_tren .tren3, .hd_duoi .duoi3, .hd_duoi .duoi4{ 
-        display: none;
-    } */
-}
-@media only screen and (max-width: 1024px){
-    footer .lien_he{
-        margin-top: 10px;
-    }
-    .case-study .thong-tin{
-        padding-left: 77px;
-    }
-    .case-study .tt-chinh{
-        width: 100%;
-    }
-    .doi_tac >div{
-        width: 100%;
-    }
-    /* .hoat-dong .line1 + img {
-        right: -47px;
-    } */
-}
-@media only screen and (max-width: 1999px){
-    .noi_bat-phai {
-        margin-bottom: 6px;
-    }
-}
-
 .custom-select-wrapper {
     
 }
@@ -1199,20 +1077,6 @@ footer .logo2{
     align-items: center;
     padding: 0px 18px;
 }
-.custom-options {
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 101%;
-    background: #fff;
-    transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: 2;
-    border: 1px solid#59BB81;
-}
 .custom-select1.open .custom-options {
     opacity: 1;
     visibility: visible;
@@ -1248,20 +1112,7 @@ footer .logo2{
     align-items: center;
     padding: 0px 18px;
 }
-.custom-options {
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 101%;
-    background: #fff;
-    transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: 2;
-    border: 1px solid#59BB81;
-}
+
 .custom-select2.open .custom-options {
     opacity: 1;
     visibility: visible;
@@ -1285,4 +1136,132 @@ footer .logo2{
 .custom-option2.selected {
     color: #ffffff;
     background: linear-gradient(351.8deg, #3CA798 32.14%, #59BB81 90.69%);
+}
+
+/* Mobile */
+@media only screen and (max-width: 1023px){
+    .navbar-toggle {
+        display: block;
+    }
+    .mainnav {
+        position: relative;
+    }
+    .mainnav-collapse {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3CA798 ;
+    }
+    .mainnav-item a{
+        color: #fff;
+    }
+    .mainnav-item .sub_menu{
+        left: -121px;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .filter .button_1{
+        width: 60%;
+    }
+    .xem{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 375px){
+    footer .chinh-sach li {
+        padding: 6px;
+    }
+}
+@media only screen and (max-width: 425px){
+    footer .dang-ky input {
+        width: 100%;
+    }
+    footer .dang-ky .button1 {
+        width: 50%;
+    }
+    .case-study .img-case{
+        height: 90%;
+    }
+    .case-study .slide4{
+        height: 890px !important;
+    }
+    .case-study .chi-so-2{
+        margin-top: 10px;
+    }
+    .swiper-pagination3 .swiper-pagination-bullet{
+        margin: 0 2px;
+        width: 20px;
+    }
+    .custom-option, .custom-option1, .custom-option2 {
+        padding: 4px;
+    }
+    .swiper-button-next2 {
+        right: -13px !important;
+        top: 153px !important;
+    }
+    .swiper-button-prev2 {
+        left: -13px !important;
+        top: 153px !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    .case-study .slide4{
+        height: 800px;
+    }
+    .case-study .thong-tin{
+        padding-left: 15px !important;
+    }
+    .case-study .thong-tin .chien-dich{
+        margin-top: 10px !important;
+    }
+    .case-study .nd-sl1{
+        height: 400px;
+    }
+    .case-study .img-case{
+        height: 100%;
+    }
+    .filter .input-2{
+        margin:30px auto 10px;
+    }
+    .loc-1{
+        padding-right: 0px !important;
+    }
+    .swiper-button-prev4 {
+        left: -35px !important;
+    }
+    .swiper-button-next4 {
+        right: -35px !important;
+    }
+    /* .hoat-dong .nho5, .hoat-dong .nho6, .hoat-dong .nho7{ 
+        display: none;
+    }
+    .hd_tren .tren3, .hd_duoi .duoi3, .hd_duoi .duoi4{ 
+        display: none;
+    } */
+}
+@media only screen and (max-width: 1024px){
+    footer .lien_he{
+        margin-top: 10px;
+    }
+    .case-study .thong-tin{
+        padding-left: 77px;
+    }
+    .case-study .tt-chinh{
+        width: 100%;
+    }
+    .doi_tac >div{
+        width: 100%;
+    }
+    /* .hoat-dong .line1 + img {
+        right: -47px;
+    } */
+}
+@media only screen and (max-width: 1999px){
+    .noi_bat-phai {
+        margin-bottom: 6px;
+    }
 }
