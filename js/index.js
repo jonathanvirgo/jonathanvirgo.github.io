@@ -61,7 +61,7 @@ document.querySelector('.custom-select-wrapper2').addEventListener('click', func
 for (const option of document.querySelectorAll(".custom-option2")) {
   option.addEventListener('click', function() {
       if (!this.classList.contains('selected')) {
-          this.parentNode.querySelector('.custom-option2.selected').classList.remove('selected');
+        this.parentNode.querySelector('.custom-option2.selected').classList.remove('selected');
           this.classList.add('selected');
           this.closest('.custom-select2').querySelector('.custom-select__trigger2 span').textContent = this.textContent;
       }
