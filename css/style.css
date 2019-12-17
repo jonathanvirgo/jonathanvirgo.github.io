@@ -1197,7 +1197,7 @@ footer .logo2{
         width: 20px;
     }
     .custom-option, .custom-option1, .custom-option2 {
-        padding: 4px;
+        padding: 0px 4px;
     }
     .swiper-button-next2 {
         right: -13px !important;
