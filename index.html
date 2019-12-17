@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <title>Kol Network</title>
@@ -21,66 +22,69 @@
 
 <body>
     <div class="page-wrapper">
-        <header>
-            <div class="container-fluid">
-                <a href="#" style="text-decoration: none;">
-                    <div class="brand">
-                        <div class="brand-item brand-item-1">
-                            <img src="img/logoweb-white.png" alt="ad">
-                        </div>
-                        <div class="brand-item brand-item-2">
-                            <div></div>
-                        </div>
-                        <div class="brand-item brand-item-3">
-                            <span> KOLs NETWORK</span>
-                        </div>
-                    </div>
-                </a>
-                <nav class="mainnav">
-                    <button class="navbar-toggle" onclick="menu()">
-                        <span>
-                            <span class="button__menu"></span>
-                        </span>
-                    </button>
-                    <div class="mainnav-collapse" id="nav_right">
-                        <div class="mainnav-item">
-                            <a href="#">Tìm kiếm KOL</a>
-                        </div>
-                        <div class="mainnav-item mainnav-item-westream we_stream">
-                            <a href="#">We Stream <img src="img/icon_down.png"></a>
-                            <div class="sub_menu">
-                                <div><a href="#">Tin tức</a></div>
-                                <div><a href="#">Case Study</a></div>
-                                <div><a href="#">Trending</a></div>
-                                <div><a href="#">Reports</a></div>
-                            </div>
-                        </div>
-                        <div class="mainnav-item">
-                            <a href="#">Khách hàng</a>
-                        </div>
-                        <div class="mainnav-item">
-                            <a href="#">Về Admicro</a>
-                        </div>
-                        <div class="mainnav-item">
-                            <a href="#">Liên hệ</a>
-                        </div>
-                        <div class="mainnav-item">
-                            <div class="mainnav-item-phone">
-                                <div>
-                                    <img src="img/phone.png" alt="phone">
+        <div>
+            <header>
+                        <div class="container-fluid">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="brand">
+                                    <div class="brand-item brand-item-1">
+                                        <img src="img/logoweb-white.png" alt="ad">
+                                    </div>
+                                    <div class="brand-item brand-item-2">
+                                        <div></div>
+                                    </div>
+                                    <div class="brand-item brand-item-3">
+                                        <span> KOLs NETWORK</span>
+                                    </div>
                                 </div>
-                                <span>0987654321</span>
-                            </div>
+                            </a>
+                            <nav class="mainnav">
+                                <button class="navbar-toggle" onclick="menu()">
+                                    <span>
+                                        <span class="button__menu"></span>
+                                    </span>
+                                </button>
+                                <div class="mainnav-collapse" id="nav_right">
+                                    <div class="mainnav-item">
+                                        <a href="#">Tìm kiếm KOL</a>
+                                    </div>
+                                    <div class="mainnav-item mainnav-item-westream we_stream">
+                                        <a href="#">We Stream <img src="img/icon_down.png"></a>
+                                        <div class="sub_menu">
+                                            <div><a href="#">Tin tức</a></div>
+                                            <div><a href="#">Case Study</a></div>
+                                            <div><a href="#">Trending</a></div>
+                                            <div><a href="#">Reports</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="mainnav-item">
+                                        <a href="#">Khách hàng</a>
+                                    </div>
+                                    <div class="mainnav-item">
+                                        <a href="#">Về Admicro</a>
+                                    </div>
+                                    <div class="mainnav-item">
+                                        <a href="#">Liên hệ</a>
+                                    </div>
+                                    <div class="mainnav-item">
+                                        <div class="mainnav-item-phone">
+                                            <div>
+                                                <img src="img/phone.png" alt="phone">
+                                            </div>
+                                            <span>0987654321</span>
+                                        </div>
+            
+                                    </div>
+                                    <!-- <div class="mainnav-item" id="phan_cach"></div> -->
+                                    <div class="mainnav-item mainnav-dangnhap">
+                                        <a href="#">Đăng nhập</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+            </header>
+        </div>
 
-                        </div>
-                        <!-- <div class="mainnav-item" id="phan_cach"></div> -->
-                        <div class="mainnav-item mainnav-dangnhap">
-                            <a href="#">Đăng nhập</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
         <section class="noi_bat">
             <div class="container-fluid">
                 <div class="row no-gutters">
@@ -225,11 +229,9 @@
                     <div class=" col-lg-5 input-2">
                         <div class="row no-gutters">
                             <div class="col-7 pr-12">
-                                    <div class="custom-select-wrapper2">
+                                    <!-- <div class="custom-select-wrapper2">
                                     <div class="custom-select2">
-                                            <div class="custom-select__trigger2"><span>Lĩnh vực (Multi tags choice)</span>
-                                                <!-- <img src="img/vt_dow.png" alt=""> -->
-                                            </div>
+                                            <div class="custom-select__trigger2"><span>Lĩnh vực (Multi tags choice)</span></div>
                                             <div class="custom-options" style="right: 12px;">
                                                 <span class="custom-option2 selected" data-value="0"></span>
                                                 <span class="custom-option2" data-value="1">Lĩnh vực 1</span>
@@ -237,7 +239,17 @@
                                                 <span class="custom-option2" data-value="3">Lĩnh vực 3</span>
                                             </div>
                                         </div>
-                                        </div>
+                                        </div> -->
+                                        <select id="se-test" multiple class="select2">
+                                            <option value="1">Lĩnh vực 1</option>
+                                            <option value="2">Lĩnh vực 2</option>
+                                            <option value="3">Lĩnh vực 3</option>
+                                            <option value="3">Lĩnh vực 4</option>
+                                            <option value="3">Lĩnh vực 5</option>
+                                            <option value="3">Lĩnh vực 6</option>
+                                            <option value="3">Lĩnh vực 7</option>
+                                            <option value="3">Lĩnh vực 8</option>
+                                        </select>
                             </div>
                             <div class="col-5">
                                     <div class="custom-select-wrapper1">
@@ -855,6 +867,7 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>

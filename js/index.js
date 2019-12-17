@@ -14,11 +14,6 @@ function menu(){
   }
 }
 
-// for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
-//   dropdown.addEventListener('click', function() {
-//       this.querySelector('.custom-select').classList.toggle('open');
-//   })
-// }
 document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
   this.querySelector('.custom-select').classList.toggle('open');
 })
@@ -55,32 +50,31 @@ window.addEventListener('click', function (e) {
         select.classList.remove('open');
     }
 });
-document.querySelector('.custom-select-wrapper2').addEventListener('click', function () {
-  this.querySelector('.custom-select2').classList.toggle('open');
-})
-for (const option of document.querySelectorAll(".custom-option2")) {
-  option.addEventListener('click', function() {
-      if (!this.classList.contains('selected')) {
-        this.parentNode.querySelector('.custom-option2.selected').classList.remove('selected');
-          this.classList.add('selected');
-          this.closest('.custom-select2').querySelector('.custom-select__trigger2 span').textContent = this.textContent;
-      }
-  })
-}
-window.addEventListener('click', function (e) {
-    const select = document.querySelector('.custom-select2')
-    if (!select.contains(e.target)) {
-        select.classList.remove('open');
-    }
-});
-// window.addEventListener('click', function(e) {
-//   for (const select of document.querySelectorAll('.custom-select')) {
-//       if (!select.contains(e.target)) {
-//           select.classList.remove('open');
+// document.querySelector('.custom-select-wrapper2').addEventListener('click', function () {
+//   this.querySelector('.custom-select2').classList.toggle('open');
+// })
+// for (const option of document.querySelectorAll(".custom-option2")) {
+//   option.addEventListener('click', function() {
+//       if (!this.classList.contains('selected')) {
+//         this.parentNode.querySelector('.custom-option2.selected').classList.remove('selected');
+//           this.classList.add('selected');
+//           this.closest('.custom-select2').querySelector('.custom-select__trigger2 span').textContent = this.textContent;
 //       }
-//   }
+//   })
+// }
+// window.addEventListener('click', function (e) {
+//     const select = document.querySelector('.custom-select2')
+//     if (!select.contains(e.target)) {
+//         select.classList.remove('open');
+//     }
 // });
+
 $(document).ready(function(){
+  $(".select2").select2({
+    allowClear: true,
+    placeholder :'Lĩnh vực (Multi tags choice)'
+    });
+    console.log("ABC");
 var swiper1 = new Swiper('.swiper-container1', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -159,5 +153,4 @@ var swiper4 = new Swiper('.swiper-container4', {
     prevEl: '.swiper-button-prev',
   },
 });
-
 });
