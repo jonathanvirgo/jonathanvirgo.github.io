@@ -13,7 +13,19 @@ function menu(){
       element.className = classes.join(" "); 
   }
 }
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  console.log("abc",window.pageYOffset,sticky)
+  if (window.pageYOffset >= 150) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
   this.querySelector('.custom-select').classList.toggle('open');
 })

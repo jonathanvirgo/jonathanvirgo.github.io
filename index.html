@@ -16,75 +16,78 @@
         .block {
             display: block;
         }
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        }
     </style>
     </style>
 </head>
 
 <body>
     <div class="page-wrapper">
-        <div>
-            <header>
-                        <div class="container-fluid">
-                            <a href="#" style="text-decoration: none;">
-                                <div class="brand">
-                                    <div class="brand-item brand-item-1">
-                                        <img src="img/logoweb-white.png" alt="ad">
-                                    </div>
-                                    <div class="brand-item brand-item-2">
-                                        <div></div>
-                                    </div>
-                                    <div class="brand-item brand-item-3">
-                                        <span> KOLs NETWORK</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <nav class="mainnav">
-                                <button class="navbar-toggle" onclick="menu()">
-                                    <span>
-                                        <span class="button__menu"></span>
-                                    </span>
-                                </button>
-                                <div class="mainnav-collapse" id="nav_right">
-                                    <div class="mainnav-item">
-                                        <a href="#">Tìm kiếm KOL</a>
-                                    </div>
-                                    <div class="mainnav-item mainnav-item-westream we_stream">
-                                        <a href="#">We Stream <img src="img/icon_down.png"></a>
-                                        <div class="sub_menu">
-                                            <div><a href="#">Tin tức</a></div>
-                                            <div><a href="#">Case Study</a></div>
-                                            <div><a href="#">Trending</a></div>
-                                            <div><a href="#">Reports</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="mainnav-item">
-                                        <a href="#">Khách hàng</a>
-                                    </div>
-                                    <div class="mainnav-item">
-                                        <a href="#">Về Admicro</a>
-                                    </div>
-                                    <div class="mainnav-item">
-                                        <a href="#">Liên hệ</a>
-                                    </div>
-                                    <div class="mainnav-item">
-                                        <div class="mainnav-item-phone">
-                                            <div>
-                                                <img src="img/phone.png" alt="phone">
-                                            </div>
-                                            <span>0987654321</span>
-                                        </div>
-            
-                                    </div>
-                                    <!-- <div class="mainnav-item" id="phan_cach"></div> -->
-                                    <div class="mainnav-item mainnav-dangnhap">
-                                        <a href="#">Đăng nhập</a>
-                                    </div>
-                                </div>
-                            </nav>
+            <header id ="header">
+                <div class="container-fluid">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="brand">
+                            <div class="brand-item brand-item-1">
+                                <img src="img/logoweb-white.png" alt="ad">
+                            </div>
+                            <div class="brand-item brand-item-2">
+                                <div></div>
+                            </div>
+                            <div class="brand-item brand-item-3">
+                                <span> KOLs NETWORK</span>
+                            </div>
                         </div>
+                    </a>
+                    <nav class="mainnav">
+                        <button class="navbar-toggle" onclick="menu()">
+                            <span>
+                                <span class="button__menu"></span>
+                            </span>
+                        </button>
+                        <div class="mainnav-collapse" id="nav_right">
+                            <div class="mainnav-item">
+                                <a href="#">Tìm kiếm KOL</a>
+                            </div>
+                            <div class="mainnav-item mainnav-item-westream we_stream">
+                                <a href="#">We Stream <img src="img/icon_down.png"></a>
+                                <div class="sub_menu">
+                                    <div><a href="#">Tin tức</a></div>
+                                    <div><a href="#">Case Study</a></div>
+                                    <div><a href="#">Trending</a></div>
+                                    <div><a href="#">Reports</a></div>
+                                </div>
+                            </div>
+                            <div class="mainnav-item">
+                                <a href="#">Khách hàng</a>
+                            </div>
+                            <div class="mainnav-item">
+                                <a href="#">Về Admicro</a>
+                            </div>
+                            <div class="mainnav-item">
+                                <a href="#">Liên hệ</a>
+                            </div>
+                            <div class="mainnav-item">
+                                <div class="mainnav-item-phone">
+                                    <div>
+                                        <img src="img/phone.png" alt="phone">
+                                    </div>
+                                    <span>0987654321</span>
+                                </div>
+    
+                            </div>
+                            <!-- <div class="mainnav-item" id="phan_cach"></div> -->
+                            <div class="mainnav-item mainnav-dangnhap">
+                                <a href="#">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </header>
-        </div>
-
         <section class="noi_bat">
             <div class="container-fluid">
                 <div class="row no-gutters">
