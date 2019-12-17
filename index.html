@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/select2.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Kol Network</title>
     <style>
         .block {
             display: block;
         }
+
         .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
         }
     </style>
     </style>
@@ -28,116 +29,127 @@
 
 <body>
     <div class="page-wrapper">
-            <header id ="header">
-                <div class="container-fluid">
-                    <a href="#" style="text-decoration: none;">
-                        <div class="brand">
-                            <div class="brand-item brand-item-1">
-                                <img src="img/logoweb-white.png" alt="ad">
-                            </div>
-                            <div class="brand-item brand-item-2">
-                                <div></div>
-                            </div>
-                            <div class="brand-item brand-item-3">
-                                <span> KOLs NETWORK</span>
+        <header id="header">
+            <div class="container-fluid">
+                <a href="#" style="text-decoration: none;">
+                    <div class="brand">
+                        <div class="brand-item brand-item-1">
+                            <img src="img/logoweb-white.png" alt="ad">
+                        </div>
+                        <div class="brand-item brand-item-2">
+                            <div></div>
+                        </div>
+                        <div class="brand-item brand-item-3">
+                            <span> KOLs NETWORK</span>
+                        </div>
+                    </div>
+                </a>
+                <nav class="mainnav">
+                    <button class="navbar-toggle" onclick="menu()">
+                        <span>
+                            <span class="button__menu"></span>
+                        </span>
+                    </button>
+                    <div class="mainnav-collapse" id="nav_right">
+                        <div class="mainnav-item">
+                            <a href="#">Tìm kiếm KOL</a>
+                        </div>
+                        <div class="mainnav-item mainnav-item-westream we_stream">
+                            <a href="#">We Stream <img src="img/icon_down.png"></a>
+                            <div class="sub_menu">
+                                <div><a href="#">Tin tức</a></div>
+                                <div><a href="#">Case Study</a></div>
+                                <div><a href="#">Trending</a></div>
+                                <div><a href="#">Reports</a></div>
                             </div>
                         </div>
-                    </a>
-                    <nav class="mainnav">
-                        <button class="navbar-toggle" onclick="menu()">
-                            <span>
-                                <span class="button__menu"></span>
-                            </span>
-                        </button>
-                        <div class="mainnav-collapse" id="nav_right">
-                            <div class="mainnav-item">
-                                <a href="#">Tìm kiếm KOL</a>
-                            </div>
-                            <div class="mainnav-item mainnav-item-westream we_stream">
-                                <a href="#">We Stream <img src="img/icon_down.png"></a>
-                                <div class="sub_menu">
-                                    <div><a href="#">Tin tức</a></div>
-                                    <div><a href="#">Case Study</a></div>
-                                    <div><a href="#">Trending</a></div>
-                                    <div><a href="#">Reports</a></div>
-                                </div>
-                            </div>
-                            <div class="mainnav-item">
-                                <a href="#">Khách hàng</a>
-                            </div>
-                            <div class="mainnav-item">
-                                <a href="#">Về Admicro</a>
-                            </div>
-                            <div class="mainnav-item">
-                                <a href="#">Liên hệ</a>
-                            </div>
-                            <div class="mainnav-item">
-                                <div class="mainnav-item-phone">
-                                    <div>
-                                        <img src="img/phone.png" alt="phone">
-                                    </div>
-                                    <span>0987654321</span>
-                                </div>
-    
-                            </div>
-                            <!-- <div class="mainnav-item" id="phan_cach"></div> -->
-                            <div class="mainnav-item mainnav-dangnhap">
-                                <a href="#">Đăng nhập</a>
-                            </div>
+                        <div class="mainnav-item">
+                            <a href="#">Khách hàng</a>
                         </div>
-                    </nav>
-                </div>
-            </header>
+                        <div class="mainnav-item">
+                            <a href="#">Về Admicro</a>
+                        </div>
+                        <div class="mainnav-item">
+                            <a href="#">Liên hệ</a>
+                        </div>
+                        <div class="mainnav-item">
+                            <div class="mainnav-item-phone">
+                                <div>
+                                    <img src="img/phone.png" alt="phone">
+                                </div>
+                                <span>0987654321</span>
+                            </div>
+
+                        </div>
+                        <!-- <div class="mainnav-item" id="phan_cach"></div> -->
+                        <div class="mainnav-item mainnav-dangnhap">
+                            <a href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <section class="noi_bat">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="noi_bat-phai col-xl-7">
                         <div class="row no-gutters">
-                            <div class="col-md-5 tin-noi-bat tin-noi-bat-1">
-                                <img class="img-fluid" src="img/test-img/anh-1.png" alt="Nhận định xu hướng thị trường">
-                                <div>
-                                    <a href="#"><p>Nhận định xu hướng thị trường KOLs 2020</p></a>
-                                </div>
+                            <div class="col-md-5 d-flex">
+                                <a class="tin-noi-bat tin-noi-bat-1" href="#">
+                                    <img class="img-fluid" src="img/test-img/anh-1.png"
+                                        alt="Nhận định xu hướng thị trường">
+                                    <div>
+                                        <p>Nhận định xu hướng thị trường KOLs 2020</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-7 ">
                                 <div class="row no-gutters">
-                                    <div class="col-12 mb-6px tin-noi-bat tin-noi-bat-2">
-                                        <img class="img-fluid" src="img/test-img/anh-2.png"
-                                            alt="Nhận định xu hướng thị trường">
-                                        <div>
-                                            <a href="#"><p>Sức mạnh của Kols Marketing trong xây dựng thương hiệu sản phẩm</p></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 tin-noi-bat tin-noi-bat-3">
-                                        <img class="img-fluid" src="img/test-img/anh-3.png"
-                                            alt="Nhận định xu hướng thị trường">
-                                        <div class="item-nd1">
-                                            <a href="#"><p style="font-size: 15px;">Uống Pepsi gặp Sơn Tùng - MTP</p></a>
-                                            <div class="nd1-2">
-                                                <div class="case">
-                                                    <p>Case Study</p>
-                                                </div>
-                                                <p>Kols: Sơn Tùng - MTP</p>
+                                    <div class="col-12 d-flex mb-6px">
+                                        <a href="#" class="tin-noi-bat tin-noi-bat-2">
+                                            <img class="img-fluid" src="img/test-img/anh-2.png"
+                                                alt="Nhận định xu hướng thị trường">
+                                            <div>
+                                                <p>Sức mạnh của Kols Marketing trong xây dựng thương hiệu sản phẩm</p>
                                             </div>
-                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="tin-noi-bat tin-noi-bat-3 d-flex">
+                                            <img class="img-fluid" src="img/test-img/anh-3.png"
+                                                alt="Nhận định xu hướng thị trường">
+                                            <div class="item-nd1">
+                                                <p style="font-size: 15px;">Uống Pepsi gặp Sơn Tùng - MTP</p>
+                                                <div class="nd1-2">
+                                                    <div class="case">
+                                                        <span>Case Study</span>
+                                                    </div>
+                                                    <span>Kols: Sơn Tùng - MTP</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="col-8">
                                         <div class="swiper-container swiper-container1" style="height: 100%;">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide swiper-slide1">
-                                                    <img class="img-fluid" src="img/test-img/anh-4.png" alt="">
-                                                    <div class="khoi2-anh3-overlay">
-                                                        <p class="khoi2-anh3-text1">Top KOLs có sức ảnh hưởng nhất trong
-                                                            cộng đồng mạng Việt Nam năm 2019</p>
-                                                        <div class="khoi2-anh3-text2">
-                                                            <div>
-                                                                <p>Tin tức</p>
+                                                    <a href="#" class="slide1 d-flex">
+                                                        <img class="img-fluid" src="img/test-img/anh-4.png" alt="">
+                                                        <div class="khoi2-anh3-overlay">
+                                                            <p class="khoi2-anh3-text1">
+                                                                Top KOLs có sức ảnh hưởng nhất trong
+                                                                cộng đồng mạng Việt Nam năm 2019</p>
+                                                            <div class="khoi2-anh3-text2">
+                                                                <div>
+                                                                    <p>Tin tức</p>
+                                                                </div>
+                                                                <p>5 giờ trước</p>
                                                             </div>
-                                                            <p>5 giờ trước</p>
                                                         </div>
-                                                    </div>
+                                                    </a> 
                                                 </div>
                                                 <div class="swiper-slide swiper-slide1">
+                                                    <a href="#" class="slide1 d-flex">
                                                     <img class="img-fluid" src="img/test-img/anh-4.png" alt="">
                                                     <div class="khoi2-anh3-overlay">
                                                         <p class="khoi2-anh3-text1">Top KOLs có sức ảnh hưởng nhất trong
@@ -149,8 +161,10 @@
                                                             <p>5 giờ trước</p>
                                                         </div>
                                                     </div>
+                                                </a>
                                                 </div>
                                                 <div class="swiper-slide swiper-slide1">
+                                                        <a href="#" class="slide1 d-flex">
                                                     <img class="img-fluid" src="img/test-img/anh-4.png" alt="">
                                                     <div class="khoi2-anh3-overlay">
                                                         <p class="khoi2-anh3-text1">Top KOLs có sức ảnh hưởng nhất trong
@@ -162,6 +176,7 @@
                                                             <p>5 giờ trước</p>
                                                         </div>
                                                     </div>
+                                                </a>
                                                 </div>
                                             </div>
                                             <!-- Add Arrows -->
@@ -182,19 +197,25 @@
                     </div>
                     <div class="noi_bat-trai col-xl-5">
                         <div class="row no-gutters">
-                            <div class="col-6 tin-noi-bat tin-noi-bat-4">
-                                <img class="img-fluid" src="img/test-img/anh-5.png" alt="Nhận định xu hướng thị trường">
-                                <img class="noi_bat-trai-logo" src="img/logo admicro 1.png" alt="">
-                                <div>
-                                    <img class="khoi3-logo2" src="img/vt_anh.png" alt="">
-                                    <a href="#"><p>Hội nghị KOLs - Admicro <br /> Những hình ảnh và sự kiện nổi bật</p></a>
-                                </div>
+                            <div class="col-6">
+                                <a href="#" class="tin-noi-bat tin-noi-bat-4">
+                                    <img class="img-fluid" src="img/test-img/anh-5.png"
+                                        alt="Nhận định xu hướng thị trường">
+                                    <img class="noi_bat-trai-logo" src="img/logo admicro 1.png" alt="">
+                                    <div>
+                                        <img class="khoi3-logo2" src="img/vt_anh.png" alt="">
+                                        <p>Hội nghị KOLs - Admicro <br /> Những hình ảnh và sự kiện nổi bật</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-6 noi_bat-trai-2 tin-noi-bat tin-noi-bat-5">
-                                <img class="img-fluid" src="img/test-img/anh-6.png" alt="Nhận định xu hướng thị trường">
-                                <div>
-                                    <a href="#"><p>5S trong xây dựng thương hiệu vượt ra <br /> ngoài yếu tố sản phẩm</p></a>
-                                </div>
+                            <div class="col-6">
+                                <a href="#" class="noi_bat-trai-2 tin-noi-bat tin-noi-bat-5">
+                                    <img class="img-fluid" src="img/test-img/anh-6.png"
+                                        alt="Nhận định xu hướng thị trường">
+                                    <div>
+                                        <p>5S trong xây dựng thương hiệu vượt ra <br /> ngoài yếu tố sản phẩm</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -208,31 +229,31 @@
                 <div class="row no-gutters">
                     <div class="col-lg-7 pr-12 loc-1">
                         <div class="row no-gutters">
-                            <div class="col-sm-8 col-7 pr-12">
+                            <div class="col-md-8 col-sm-12 pr-12 loc1-1">
                                 <input type="text" class="text_box1" placeholder="Tên KOL">
                             </div>
-                            <div class="col-sm-4 col-5">
-                                    <div class="custom-select-wrapper">
-                                            <div class="custom-select">
-                                                <div class="custom-select__trigger"><span>Nhóm</span>
-                                                    <img src="img/vt_dow.png" alt="">
-                                                </div>
-                                                <div class="custom-options">
-                                                    <span class="custom-option selected"  data-value="0"></span>
-                                                    <span class="custom-option" data-value="1">Nhóm 1</span>
-                                                    <span class="custom-option" data-value="2">Nhóm 2</span>
-                                                    <span class="custom-option" data-value="3">Nhóm 3</span>
-                                                </div>
-                                            </div>
+                            <div class="col-md-4 col-sm-12 loc1-2">
+                                <div class="custom-select-wrapper">
+                                    <div class="custom-select">
+                                        <div class="custom-select__trigger"><span>Nhóm</span>
+                                            <img src="img/vt_dow.png" alt="">
                                         </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option selected" data-value="0"></span>
+                                            <span class="custom-option" data-value="1">Nhóm 1</span>
+                                            <span class="custom-option" data-value="2">Nhóm 2</span>
+                                            <span class="custom-option" data-value="3">Nhóm 3</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                     <div class=" col-lg-5 input-2">
                         <div class="row no-gutters">
-                            <div class="col-7 pr-12">
-                                    <!-- <div class="custom-select-wrapper2">
+                            <div class="col-md-7 col-sm-12 pr-12 input-2-1">
+                                <!-- <div class="custom-select-wrapper2">
                                     <div class="custom-select2">
                                             <div class="custom-select__trigger2"><span>Lĩnh vực (Multi tags choice)</span></div>
                                             <div class="custom-options" style="right: 12px;">
@@ -243,31 +264,31 @@
                                             </div>
                                         </div>
                                         </div> -->
-                                        <select id="se-test" multiple class="select2">
-                                            <option value="1">Lĩnh vực 1</option>
-                                            <option value="2">Lĩnh vực 2</option>
-                                            <option value="3">Lĩnh vực 3</option>
-                                            <option value="3">Lĩnh vực 4</option>
-                                            <option value="3">Lĩnh vực 5</option>
-                                            <option value="3">Lĩnh vực 6</option>
-                                            <option value="3">Lĩnh vực 7</option>
-                                            <option value="3">Lĩnh vực 8</option>
-                                        </select>
+                                <select id="se-test" multiple class="select2">
+                                    <option value="1">Lĩnh vực 1</option>
+                                    <option value="2">Lĩnh vực 2</option>
+                                    <option value="3">Lĩnh vực 3</option>
+                                    <option value="3">Lĩnh vực 4</option>
+                                    <option value="3">Lĩnh vực 5</option>
+                                    <option value="3">Lĩnh vực 6</option>
+                                    <option value="3">Lĩnh vực 7</option>
+                                    <option value="3">Lĩnh vực 8</option>
+                                </select>
                             </div>
-                            <div class="col-5">
-                                    <div class="custom-select-wrapper1">
-                                            <div class="custom-select1">
-                                                <div class="custom-select__trigger1"><span>Khu vực</span>
-                                                    <img src="img/vt_dow.png" alt="">
-                                                </div>
-                                                <div class="custom-options">
-                                                    <span class="custom-option1 selected" data-value="0"></span>
-                                                    <span class="custom-option1" data-value="1">Khu vực 1</span>
-                                                    <span class="custom-option1" data-value="2">Khu vực 2</span>
-                                                    <span class="custom-option1" data-value="3">Khu vực 3</span>
-                                                </div>
-                                            </div>
+                            <div class="col-md-5 col-sm-12 input-2-2">
+                                <div class="custom-select-wrapper1">
+                                    <div class="custom-select1">
+                                        <div class="custom-select__trigger1"><span>Khu vực</span>
+                                            <img src="img/vt_dow.png" alt="">
                                         </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option1 selected" data-value="0"></span>
+                                            <span class="custom-option1" data-value="1">Khu vực 1</span>
+                                            <span class="custom-option1" data-value="2">Khu vực 2</span>
+                                            <span class="custom-option1" data-value="3">Khu vực 3</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -287,46 +308,46 @@
                             <div class="swiper-slide">
                                 <div class="idol idol1">
                                     <div class="grandient">
-                                        <img src="img/son_tung.jpg" alt="">
+                                        <a href="#"><img src="img/son_tung.jpg" alt=""></a>
                                     </div>
-                                    <p class="ten_cs">Sơn Tùng MTP</p>
+                                    <p class="ten_cs"><a href="#">Sơn Tùng MTP</a></p>
                                     <p class="thong_tin_cs">Ca sĩ tự do <br /> <b>9,300,000+</b>Fans</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="idol">
                                     <div class="grandient">
-                                        <img src="img/chi_pu.jpg" alt="">
+                                            <a href="#"><img src="img/chi_pu.jpg" alt=""></a>
                                     </div>
-                                    <p class="ten_cs">Chipu</p>
-                                <p class="thong_tin_cs">Ca sĩ - diễn viên <br/> <b>8,100,000+</b>Fans</p>
+                                    <p class="ten_cs"><a href="#">Chipu</a></p>
+                                    <p class="thong_tin_cs">Ca sĩ - diễn viên <br /> <b>8,100,000+</b>Fans</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="idol">
                                     <div class="grandient">
-                                        <img src="img/tran_thanh.jpg" alt="">
+                                            <a href="#"><img src="img/tran_thanh.jpg" alt=""></a>
                                     </div>
-                                    <p class="ten_cs">Trấn Thành</p>
-                                    <p class="thong_tin_cs">MC - diễn viên hài <br/> <b>10,900,000+</b>Fans</p>
+                                    <p class="ten_cs"><a href="#">Trấn Thành</a></p>
+                                    <p class="thong_tin_cs">MC - diễn viên hài <br /> <b>10,900,000+</b>Fans</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="idol">
                                     <div class="grandient">
-                                        <img src="img/khoi_my.jpg" alt="">
+                                            <a href="#"><img src="img/khoi_my.jpg" alt=""></a>
                                     </div>
-                                    <p class="ten_cs">Khởi my</p>
-                                    <p class="thong_tin_cs">MC <br/> <b>10,700,000+</b>Fans</p>
+                                    <p class="ten_cs"><a href="#">Khởi my</a></p>
+                                    <p class="thong_tin_cs">MC <br /> <b>10,700,000+</b>Fans</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="idol">
                                     <div class="grandient">
-                                        <img src="img/dong_nhi.jpg" alt="">
+                                            <a href="#"><img src="img/dong_nhi.jpg" alt=""></a>
                                     </div>
-                                    <p class="ten_cs">ĐÔNG nhi</p>
-                            <p class="thong_tin_cs">Ca sĩ <br/> <b>7,500,000+</b>Fans</p>
+                                    <p class="ten_cs"><a href="#">ĐÔNG nhi</a></p>
+                                    <p class="thong_tin_cs">Ca sĩ <br /> <b>7,500,000+</b>Fans</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">Slide 6</div>
@@ -351,293 +372,405 @@
         </div>
         <div class="container-fluid">
             <section class="hoat-dong">
-                <div class="container" style="max-width:1200px">
+                <div class="container" style="max-width:1230px">
                     <p><span style="color: #59BB81;">KOLs</span> Activities</p>
                     <div class="nd-hd">
                         <div class="hd_tren">
                             <div class="tren tren1">
                                 <div class="chu">
-                                    <p><b>Vietnam Fashion Week 2019</b></p>
+                                    <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
                                     <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
                                     <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
                                 </div>
-                                <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <a href="#"><svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g filter="url(#filter0_d)">
-                                    <path d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z" fill="#C4C4C4"/>
-                                    <path d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z" stroke="white" stroke-width="3"/>
+                                        <path
+                                            d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z"
+                                            stroke="white" stroke-width="3" />
                                     </g>
-                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10" width="100" height="108">
-                                    <path d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z" fill="#C4C4C4"/>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10"
+                                        width="100" height="108">
+                                        <path
+                                            d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z"
+                                            fill="#C4C4C4" />
                                     </mask>
                                     <g mask="url(#mask0)">
-                                    <rect x="-51" y="3" width="221" height="124" fill="url(#pattern11)"/>
+                                        <rect x="-51" y="3" width="221" height="124" fill="url(#pattern11)" />
                                     </g>
                                     <defs>
-                                    <filter id="filter0_d" x="0" y="0" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                    <feOffset/>
-                                    <feGaussianBlur stdDeviation="3"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                    </filter>
-                                    <pattern id="pattern11" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image11" transform="translate(0 -0.00126008) scale(0.0015625 0.00278478)"/>
-                                    </pattern>
-                                    <image id="image11" width="640" height="360" xlink:href="img/image1.png"></image>
+                                        <filter id="filter0_d" x="0" y="0" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
+                                        </filter>
+                                        <pattern id="pattern11" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image11"
+                                                transform="translate(0 -0.00126008) scale(0.0015625 0.00278478)" />
+                                        </pattern>
+                                        <image id="image11" width="640" height="360" xlink:href="img/image1.png">
+                                        </image>
                                     </defs>
-                                    </svg>   
+                                </svg></a>
                             </div>
                             <div class="tren tren2">
                                 <div class="chu">
-                                    <p><b>Vietnam Fashion Week 2019</b></p>
-                                     <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
-                                    <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
-                                </div>
-                                <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g filter="url(#filter0_d)">
-                                        <path d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z" fill="#C4C4C4"/>
-                                        <path d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z" stroke="white" stroke-width="3"/>
-                                        </g>
-                                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10" width="100" height="108">
-                                        <path d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z" fill="#C4C4C4"/>
-                                        </mask>
-                                        <g mask="url(#mask0)">
-                                        <rect x="-51" y="3" width="221" height="124" fill="url(#pattern12)"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d" x="0" y="0" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset/>
-                                        <feGaussianBlur stdDeviation="3"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                        </filter>
-                                        <pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image12" transform="translate(0 -0.00126008) scale(0.0015625 0.00278478)"/>
-                                        </pattern>
-                                        <image id="image12" width="640" height="360" xlink:href="img/image1.png"></image>
-                                        </defs>
-                                </svg>   
-                            </div>
-                            <div class="tren tren3">
-                                <div class="chu">
-                                    <p><b>Vietnam Fashion Week 2019</b></p>
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
                                     <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
                                     <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
                                 </div>
-                                <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <a href="#"><svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g filter="url(#filter0_d)">
-                                    <path d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z" fill="#C4C4C4"/>
-                                    <path d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z" stroke="white" stroke-width="3"/>
+                                        <path
+                                            d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z"
+                                            stroke="white" stroke-width="3" />
                                     </g>
-                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10" width="100" height="108">
-                                    <path d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z" fill="#C4C4C4"/>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10"
+                                        width="100" height="108">
+                                        <path
+                                            d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z"
+                                            fill="#C4C4C4" />
                                     </mask>
                                     <g mask="url(#mask0)">
-                                    <rect x="-51" y="3" width="221" height="124" fill="url(#pattern13)"/>
+                                        <rect x="-51" y="3" width="221" height="124" fill="url(#pattern12)" />
                                     </g>
                                     <defs>
-                                    <filter id="filter0_d" x="0" y="0" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                    <feOffset/>
-                                    <feGaussianBlur stdDeviation="3"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                    </filter>
-                                    <pattern id="pattern13" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image13" transform="translate(0.246911) scale(0.00171586 0.0030581)"/>
-                                    </pattern>
-                                    <image id="image13" width="295" height="327" xlink:href="img/image9.png"></image>
+                                        <filter id="filter0_d" x="0" y="0" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
+                                        </filter>
+                                        <pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image12"
+                                                transform="translate(0 -0.00126008) scale(0.0015625 0.00278478)" />
+                                        </pattern>
+                                        <image id="image12" width="640" height="360" xlink:href="img/image1.png">
+                                        </image>
                                     </defs>
-                                    </svg>
-                                    
+                                </svg></a>
+                            </div>
+                            <div class="tren tren3">
+                                <div class="chu">
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
+                                    <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
+                                    <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
+                                </div>
+                                <a href="#"><svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g filter="url(#filter0_d)">
+                                        <path
+                                            d="M109 103.528C109 106.842 106.314 109.528 103 109.528L73.3812 109.528C70.9769 109.528 68.8655 111.012 67.5302 113.011C66.0751 115.19 64.418 116.82 63.0331 117.956C61.3071 119.372 58.9 119.188 57.1913 117.752C55.5134 116.341 53.3814 114.394 51.6179 112.286C50.2623 110.666 48.3312 109.528 46.2187 109.528L15 109.528C11.6863 109.528 8.99999 106.842 8.99999 103.528L9 15C9 11.6863 11.6863 9.00001 15 9.00001L103 9.00001C106.314 9.00002 109 11.6863 109 15L109 103.528Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M103 111.028C107.142 111.028 110.5 107.67 110.5 103.528L110.5 15C110.5 10.8579 107.142 7.50002 103 7.50001L15 7.50001C10.8579 7.50001 7.5 10.8579 7.5 15L7.49999 103.528C7.49999 107.67 10.8579 111.028 15 111.028L46.2187 111.028C47.7799 111.028 49.3201 111.877 50.4675 113.249C52.3105 115.451 54.5163 117.462 56.2259 118.9C58.404 120.731 61.6197 121.055 63.9844 119.116C65.4572 117.908 67.2235 116.171 68.7775 113.844C69.9237 112.128 71.6196 111.028 73.3812 111.028L103 111.028Z"
+                                            stroke="white" stroke-width="3" />
+                                    </g>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="10"
+                                        width="100" height="108">
+                                        <path
+                                            d="M109 102.717C109 106.031 106.314 108.717 103 108.717L73.3529 108.717C70.9629 108.717 68.8618 110.184 67.5152 112.159C66.0518 114.305 64.3859 115.908 62.999 117.02C61.2843 118.396 58.9183 118.216 57.2222 116.818C55.5413 115.432 53.3966 113.511 51.6233 111.431C50.2639 109.837 48.3458 108.717 46.2505 108.717L15 108.717C11.6863 108.717 8.99999 106.031 8.99999 102.717L9 16C9 12.6863 11.6863 10 15 10L103 10C106.314 10 109 12.6863 109 16L109 102.717Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask0)">
+                                        <rect x="-51" y="3" width="221" height="124" fill="url(#pattern13)" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d" x="0" y="0" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
+                                        </filter>
+                                        <pattern id="pattern13" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image13"
+                                                transform="translate(0.246911) scale(0.00171586 0.0030581)" />
+                                        </pattern>
+                                        <image id="image13" width="295" height="327" xlink:href="img/image9.png">
+                                        </image>
+                                    </defs>
+                                </svg></a>
+
                             </div>
                         </div>
                         <div class="line">
                             <img class="line1" src="img/Line 1.png" alt="">
-                             <img src="img/Arrow 1 (Stroke).png" alt="">
-                             <div class="cac-diem">
+                            <img src="img/Arrow 1 (Stroke).png" alt="">
+                            <div class="cac-diem">
                                 <div class="t10 hinh_tron">
                                     <p>T10</p>
                                 </div>
-                                 <div class="nho1">
+                                <div class="nho1">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="nho2">
+                                </div>
+                                <div class="nho2">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="nho3">
+                                </div>
+                                <div class="nho3">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="t11 hinh_tron">
+                                </div>
+                                <div class="t11 hinh_tron">
                                     <p>T11</p>
                                 </div>
-                                 <div class="nho4">
+                                <div class="nho4">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="nho5">
+                                </div>
+                                <div class="nho5">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="t12 hinh_tron">
+                                </div>
+                                <div class="t12 hinh_tron">
                                     <p>T12</p>
                                 </div>
-                                 <div class="nho6">
+                                <div class="nho6">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                                 <div class="nho7">
+                                </div>
+                                <div class="nho7">
                                     <div class="tron_nho"></div>
                                     <img src="img/Line 2.png" alt="">
-                                 </div>
-                             </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="hd_duoi">
                             <div class="duoi duoi1">
-                                    <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g filter="url(#filter1_d)">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        <path d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z" stroke="white" stroke-width="3"/>
-                                        </g>
-                                        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="100" height="110">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        </mask>
-                                        <g mask="url(#mask1)">
-                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern21)"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset/>
-                                        <feGaussianBlur stdDeviation="3"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    <a href="#"><svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g filter="url(#filter1_d)">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z"
+                                            stroke="white" stroke-width="3" />
+                                    </g>
+                                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9"
+                                        width="100" height="110">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask1)">
+                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern21)" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
                                         </filter>
-                                        <pattern id="pattern21" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image21" transform="translate(0.155694) scale(0.00266904 0.00355872)"/>
+                                        <pattern id="pattern21" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image21"
+                                                transform="translate(0.155694) scale(0.00266904 0.00355872)" />
                                         </pattern>
-                                        <image id="image21" width="258" height="281" xlink:href="img/image3.png"></image>
-                                        </defs>
-                                    </svg>  
-                                    <div class="chu">
-                                        <p><b>Vietnam Fashion Week 2019</b></p>
-                                        <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
-                                        <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
+                                        <image id="image21" width="258" height="281" xlink:href="img/image3.png">
+                                        </image>
+                                    </defs>
+                                </svg></a>
+                                <div class="chu">
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
+                                    <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
+                                    <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
                                 </div>
                             </div>
                             <div class="duoi duoi2">
-                                    <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g filter="url(#filter1_d)">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        <path d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z" stroke="white" stroke-width="3"/>
-                                        </g>
-                                        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="100" height="110">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        </mask>
-                                        <g mask="url(#mask1)">
-                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern22)"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset/>
-                                        <feGaussianBlur stdDeviation="3"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    <a href="#"> <svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g filter="url(#filter1_d)">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z"
+                                            stroke="white" stroke-width="3" />
+                                    </g>
+                                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9"
+                                        width="100" height="110">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask1)">
+                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern22)" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
                                         </filter>
-                                        <pattern id="pattern22" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image22" transform="translate(0.155694) scale(0.00266904 0.00355872)"/>
+                                        <pattern id="pattern22" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image22"
+                                                transform="translate(0.155694) scale(0.00266904 0.00355872)" />
                                         </pattern>
-                                         <image id="image22" width="258" height="281" xlink:href="img/image3.png"></image>
-                                        </defs>
-                                    </svg>   
-                                    <div class="chu">
-                                        <p><b>Vietnam Fashion Week 2019</b></p>
-                                        <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
-                                        <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
-                                    </div>
-                            </div>
-                            <div class="duoi duoi3">
-                                    <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g filter="url(#filter1_d)">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        <path d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z" stroke="white" stroke-width="3"/>
-                                        </g>
-                                        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="100" height="110">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        </mask>
-                                        <g mask="url(#mask1)">
-                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern23)"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset/>
-                                        <feGaussianBlur stdDeviation="3"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                        </filter>
-                                        <pattern id="pattern23" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image23" transform="translate(0.155694) scale(0.00266904 0.00355872)"/>
-                                        </pattern>
-                                         <image id="image23" width="258" height="281" xlink:href="img/image2.png"></image>
-                                        </defs>
-                                    </svg>   
-                                    <div class="chu">
-                                        <p><b>Vietnam Fashion Week 2019</b></p>
-                                        <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
-                                        <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
-                                    </div>
-                            </div>
-                            <div class="duoi duoi4">
-                                    <svg width="118" height="128" viewBox="0 0 118 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g filter="url(#filter1_d)">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        <path d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z" stroke="white" stroke-width="3"/>
-                                        </g>
-                                        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="100" height="110">
-                                        <path d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z" fill="#C4C4C4"/>
-                                        </mask>
-                                        <g mask="url(#mask1)">
-                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern24)"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset/>
-                                        <feGaussianBlur stdDeviation="3"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                        </filter>
-                                        <pattern id="pattern24" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image24" transform="translate(0.155694) scale(0.00266904 0.00355872)"/>
-                                        </pattern>
-                                         <image id="image24" width="258" height="281" xlink:href="img/image2.png"></image>
-                                        </defs>
-                                    </svg>  
+                                        <image id="image22" width="258" height="281" xlink:href="img/image3.png">
+                                        </image>
+                                    </defs>
+                                </svg></a>
                                 <div class="chu">
-                                    <p><b>Vietnam Fashion Week 2019</b></p>
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
                                     <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
                                     <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
+                                </div>
                             </div>
+                            <div class="duoi duoi3">
+                                    <a href="#"> <svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g filter="url(#filter1_d)">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z"
+                                            stroke="white" stroke-width="3" />
+                                    </g>
+                                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9"
+                                        width="100" height="110">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask1)">
+                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern23)" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
+                                        </filter>
+                                        <pattern id="pattern23" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image23"
+                                                transform="translate(0.155694) scale(0.00266904 0.00355872)" />
+                                        </pattern>
+                                        <image id="image23" width="258" height="281" xlink:href="img/image2.png">
+                                        </image>
+                                    </defs>
+                                </svg></a>
+                                <div class="chu">
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
+                                    <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
+                                    <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
+                                </div>
+                            </div>
+                            <div class="duoi duoi4">
+                                <a href="#"><svg width="118" height="128" viewBox="0 0 118 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g filter="url(#filter1_d)">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M15 16.9717C10.8579 16.9717 7.5 20.3296 7.5 24.4717V113C7.5 117.142 10.8579 120.5 15 120.5H103C107.142 120.5 110.5 117.142 110.5 113V24.4717C110.5 20.3296 107.142 16.9717 103 16.9717H71.7813C70.2201 16.9717 68.6799 16.1228 67.5325 14.7514C65.6895 12.5487 63.4837 10.5377 61.774 9.10027C59.596 7.26902 56.3803 6.94458 54.0156 8.88408C52.5428 10.0921 50.7765 11.8291 49.2225 14.156C48.0763 15.8721 46.3803 16.9717 44.6188 16.9717H15Z"
+                                            stroke="white" stroke-width="3" />
+                                    </g>
+                                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9"
+                                        width="100" height="110">
+                                        <path
+                                            d="M9 24.4717C9 21.158 11.6863 18.4717 15 18.4717H44.6188C47.0231 18.4717 49.1345 16.9885 50.4698 14.9891C51.9249 12.8105 53.582 11.1797 54.9669 10.0439C56.6929 8.62814 59.1 8.81174 60.8087 10.2484C62.4866 11.6591 64.6186 13.6063 66.3821 15.7139C67.7377 17.3342 69.6688 18.4717 71.7813 18.4717H103C106.314 18.4717 109 21.158 109 24.4717V113C109 116.314 106.314 119 103 119H15C11.6863 119 9 116.314 9 113V24.4717Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask1)">
+                                        <rect x="-21" y="4" width="160" height="120" fill="url(#pattern24)" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter1_d" x="0" y="0.0703125" width="118" height="127.93"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="3" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                result="shape" />
+                                        </filter>
+                                        <pattern id="pattern24" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image24"
+                                                transform="translate(0.155694) scale(0.00266904 0.00355872)" />
+                                        </pattern>
+                                        <image id="image24" width="258" height="281" xlink:href="img/image2.png">
+                                        </image>
+                                    </defs>
+                                </svg></a>
+                                <div class="chu">
+                                        <p class="hd-tieu-de"><a href="#"><b>Vietnam Fashion Week 2019</b></a></p>
+                                    <p style="font-size: 12px;">Kols: <b>Sơn Tùng - MTP, Châu Bùi</b></p>
+                                    <p style="font-size: 12px;">Địa điểm: <b>Hà Nội</b></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -656,8 +789,8 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="tin tin1">
-                                    <img src="img/image 68.png" alt="">
-                                    <p>Hội thảo Marketing: Era of Hybrid Customer</p>
+                                    <div class="tin-anh"><a href="#"><img src="img/image 68.png" alt=""></a></div>
+                                    <p><a href="#" class="tieu-de-tin">Hội thảo Marketing: Era of Hybrid Customer</a></p>
                                     <div class="text">
                                         <p>Ngày: <b>22/11/2019</b></p>
                                         <p>Địa điểm: <b>Lăng Cô Beach Resort - Huế</b></p>
@@ -666,15 +799,15 @@
                                             quốc</p>
                                     </div>
                                     <button class="bt-ws bt-trang">
-                                            <img src="img/v.png" alt="">
-                                            <p>Đã hoàn thành</p>
+                                        <img src="img/v.png" alt="">
+                                        <p>Đã hoàn thành</p>
                                     </button>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="tin tin2">
-                                    <img src="img/image 69.png" alt="">
-                                    <p>Ha Noi Marketing day 2019</p>
+                                        <div class="tin-anh"><a href="#"><img src="img/image 69.png" alt=""></a></div>
+                                    <p><a href="#" class="tieu-de-tin">Ha Noi Marketing day 2019</a></p>
                                     <div class="text">
                                         <p>Ngày: <b>22/11/2019</b></p>
                                         <p>Địa điểm: <b>Trung tâm Hội nghị Quốc gia</b></p>
@@ -689,8 +822,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tin tin3">
-                                    <img src="img/image 69 (1).png" alt="">
-                                    <p>Sale from Zero to Hero</p>
+                                        <div class="tin-anh"><a href="#"><img src="img/image 69 (1).png" alt=""></a></div>
+                                    <p><a href="#" class="tieu-de-tin">Sale from Zero to Hero </a></p>
                                     <div class="text">
                                         <p>Ngày: <b>22/11/2019</b></p>
                                         <p>Địa điểm: <b>Trung tâm Hội nghị Quốc gia</b></p>
@@ -730,12 +863,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide swiper-slide4">
                                     <div class="row nd-sl">
-                                        <div class="col-lg-4 nd-sl1">
-                                            <img class="img-case img-case1 img-fluid" src="img/image 9.png" alt="">
+                                        <div class="col-lg-4 nd-anh nd-sl1">
+                                            <a href="#"><img class="img-case img-case1 img-fluid" src="img/image 9.png" alt=""></a>
                                         </div>
                                         <div class="col-lg-8 thong-tin">
                                             <p class="chu_mo chien-dich" style="margin-top: 43px">Chiến dịch</p>
-                                            <p class="chu_to">Vì nụ cười Việt Nam</p>
+                                            <p class="chu_to"><a href="#">Vì nụ cười Việt Nam </a></p>
                                             <div class="row" style="margin-top: 19px;">
                                                 <div class="col-sm-3">
                                                     <p class="chu_mo">Nhãn hàng</p>
@@ -819,7 +952,7 @@
         <div class="container">
             <section class="doi_tac">
                 <p><span class="grandient_text">đối tác</span> nổi bật</p>
-                <div>
+                <div class="doi_tac_1">
                     <img class="img-fluid" src="img/image 1.png" alt="">
                 </div>
 

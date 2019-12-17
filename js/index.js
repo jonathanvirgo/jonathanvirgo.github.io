@@ -90,6 +90,7 @@ $(document).ready(function(){
 var swiper1 = new Swiper('.swiper-container1', {
   slidesPerView: 1,
   spaceBetween: 10,
+  preventClicks: false,
   // loop: true,
   pagination: {
     el: '.swiper-pagination1',
@@ -164,5 +165,11 @@ var swiper4 = new Swiper('.swiper-container4', {
     nextEl: '.swiper-button-next4',
     prevEl: '.swiper-button-prev',
   },
+});
+var t10 = $(".t10").offset();
+$(".nd-hd").mousedown(function(){
+  console.log("T10 1",t10);
+}).mouseup(function(){
+  console.log("T10 2",t10);
 });
 });
