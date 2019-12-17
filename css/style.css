@@ -577,6 +577,7 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 .hoat-dong{
     background: #F5F5F5;
     font-family: 'Quicksand', sans-serif;
+    position: relative;
 }
 .hoat-dong .container > p{
     font-size: 30px;
@@ -754,6 +755,12 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     margin: auto;
     position: relative;
     top: -52px;
+}
+.hoat-dong-muiten{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
 }
 /* Hết hoạt động */
 .grandient_text{
@@ -1330,6 +1337,11 @@ footer .logo2{
     }
     .swiper-button-prev4 {
         left: -36px;
+    }
+    .hoat-dong-muiten{
+        display: block;
+        top: 48px;
+        right: 50px;
     }
     /* .hoat-dong .line1 + img {
         right: -47px;
