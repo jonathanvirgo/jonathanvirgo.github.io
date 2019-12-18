@@ -749,12 +749,22 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 }
 .nd-hd{
     max-width: 1230px;
-    /* margin-bottom: 68px; */
     overflow-x: scroll;
     -ms-overflow-style: none;
 }
 .nd-hd::-webkit-scrollbar {
     display: none;
+    background-color: #5a5353;
+    height: 3px;
+}
+.nd-hd::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+.nd-hd::-webkit-scrollbar-thumb
+{
+	background-color: #5a5353;
 }
 .bt-hoatdong {
     margin: auto;
@@ -1348,6 +1358,13 @@ footer .logo2{
         display: block;
         top: 48px;
         right: 50px;
+    }
+    .nd-hd::-webkit-scrollbar {
+        display: block;
+    }
+    .bt-hoatdong {
+        margin-bottom: 35px;
+        margin-top: 30px;
     }
     /* .hoat-dong .line1 + img {
         right: -47px;
