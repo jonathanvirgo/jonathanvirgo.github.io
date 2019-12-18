@@ -1,5 +1,5 @@
-function menu(){
-  var element = document.getElementById("nav_right");
+function menu(id){
+  var element = document.getElementById(id);
   if (element.classList) { 
       element.classList.toggle("block");
   } else {
@@ -85,7 +85,8 @@ window.addEventListener('click', function (e) {
 $(document).ready(function(){
   $(".select2").select2({
     allowClear: true,
-    placeholder :'Lĩnh vực (Multi tags choice)'
+    placeholder :'Lĩnh vực (Multi tags choice)',
+    closeOnSelect: false
     });
     console.log("ABC");
 var swiper1 = new Swiper('.swiper-container1', {

@@ -14,9 +14,8 @@
     <title>Kol Network</title>
     <style>
         .block {
-            display: block;
+            display: block !important;
         }
-
         .sticky {
             position: fixed;
             top: 0;
@@ -45,7 +44,7 @@
                     </div>
                 </a>
                 <nav class="mainnav">
-                    <button class="navbar-toggle" onclick="menu()">
+                    <button class="navbar-toggle" onclick="menu('nav_right')">
                         <span>
                             <span class="button__menu"></span>
                         </span>
@@ -54,9 +53,9 @@
                         <div class="mainnav-item">
                             <a href="#">Tìm kiếm KOL</a>
                         </div>
-                        <div class="mainnav-item mainnav-item-westream we_stream">
-                            <a href="#">We Stream <img src="img/icon_down.png"></a>
-                            <div class="sub_menu">
+                        <div class="mainnav-item mainnav-item-westream we_stream" onclick="menu('sub_menu')">
+                            <div >We Stream <img src="img/icon_down.png"></div>
+                            <div class="sub_menu" id="sub_menu">
                                 <div><a href="#">Tin tức</a></div>
                                 <div><a href="#">Case Study</a></div>
                                 <div><a href="#">Trending</a></div>
