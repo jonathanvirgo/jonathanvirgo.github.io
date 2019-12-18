@@ -1145,7 +1145,7 @@ footer .chinh-sach li a:hover{
 }
 footer .logo2{
     float: left;
-    margin-top: 20px;
+    margin-top: 19px;
 }
 /* } Hết footer */
 .pr-12{
@@ -1344,6 +1344,10 @@ footer .logo2{
 ::-webkit-scrollbar-thumb{
     background-color: #5a5353;
 }
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    position: relative;
+    top: -1px;
+}
 /* .select2-container--default .select2-search--inline .select2-search__field {
     width: 100% !important;
 } */
@@ -1488,7 +1492,7 @@ footer .logo2{
         width: 100%;
     }
     footer .dang-ky .button1 {
-        width: 50%;
+        width: 60%;
     }
     .case-study .img-case{
         height: 90%;
@@ -1538,6 +1542,21 @@ footer .logo2{
     .swiper-button-prev4 {
         left: -44px;
     }
+    footer .lien_he + ul li {
+        padding: 8px 0px 8px 17px;
+    }
+    .swiper-button-next3 {
+        right: -44px;
+    }
+    footer .lien_he, footer .lien_he {
+        padding-right: 0px;
+    }
+    footer .ban-quyen >p {
+        padding: 23px 25px 0px;
+    }
+    footer .chinh-sach{
+        margin-bottom: 12px;
+    }
 }
 @media only screen and (max-width: 375px){
     footer .chinh-sach li {
@@ -1552,6 +1571,12 @@ footer .logo2{
     .swiper-button-prev2 {
         left: -5px;
     }
+    footer .ban-quyen >p {
+        padding: 23px 25px 14px;
+    }
+    footer .logo2 {
+        margin-top: 28px;
+    }
 }
 @media only screen and (max-width: 320px){
     .filter .button_1{
@@ -1559,6 +1584,12 @@ footer .logo2{
     }
     .xem{
         width: 80%;
+    }
+    .case-study .container > p, .workshop > p, .hoat-dong .container > p {
+        font-size: 27px;
+    }
+    .hoat-dong .container > p{
+        padding: 38px;
     }
 }
 
