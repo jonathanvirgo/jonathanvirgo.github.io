@@ -88,7 +88,7 @@ $(document).ready(function(){
     placeholder :'Lĩnh vực (Multi tags choice)',
     closeOnSelect: false
     });
-    console.log("ABC");
+    console.log($(".leaderMultiSelctdropdown").select2('data'));
 var swiper1 = new Swiper('.swiper-container1', {
   slidesPerView: 1,
   spaceBetween: 10,

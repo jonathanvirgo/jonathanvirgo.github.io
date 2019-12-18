@@ -27,6 +27,10 @@ button:active {
     background-color: #3e8e41;
     box-shadow: 0 2px #4e7d77;
     transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    -ms-transform: translateY(4px);
   }
 .select-items {
     position: absolute;
@@ -255,7 +259,11 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 }
 .tin-noi-bat:hover img{
     opacity: 0.95;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 /* .tin-noi-bat-3:hover .item-nd1>p{
     color: #abff9d;
@@ -369,7 +377,11 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 }
 .slide1:hover img{
     opacity: 0.95;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .slide1:hover .khoi2-anh3-text1{
     color: #abff9d;
@@ -545,10 +557,7 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     border-radius: 50%;
     position: relative;
     margin: auto;
-    transition: all 1s ease;
-}
-.tieu-bieu .idol .grandient:hover{
-    transform: rotateY(180deg);
+    overflow: hidden;
 }
 .tieu-bieu .grandient img{
     position: absolute;
@@ -560,6 +569,14 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     left: 6px;
     object-fit: cover;
     object-position: center;
+    transition: all 0.6s ease;
+}
+.tieu-bieu .idol .grandient:hover img{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .tieu-bieu .idol >p{
     text-align: center;
@@ -683,6 +700,10 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 .tren svg{ transition: all 1s ease;}
 .tren:hover svg{
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .tren:hover .hd-tieu-de a{
     color: #3CA798;;
@@ -690,6 +711,10 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 .duoi svg{ transition: all 1s ease;}
 .duoi:hover svg{
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .duoi:hover .hd-tieu-de a{
     color: #3CA798;;
@@ -803,17 +828,6 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
     margin: 50px auto;
     /* overflow: hidden; */
 }
-/* .doi_tac1 >img{
-    display: block;
-    position:relative;
-    -webkit-transition:all .4s linear;
-    transition:all .4s linear;
-} */
-.doi_tac_1 :hover{
-    -ms-transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2); 
-}
 /* } Hết đối tác */
 .workshop{
     font-family: 'Quicksand', sans-serif;
@@ -891,7 +905,11 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 }
 .workshop .tin-anh:hover img{
     opacity: 0.95;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .workshop .tin .text{
     font-size: 14px;
@@ -1008,9 +1026,6 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 .swiper-pagination4 .swiper-pagination-bullet{
     margin: 0 4px;
 }
-.case-study .img-case{
-    margin-top: 15px;
-}
 .chu_mo{
     font-size: 13px;
     color: #999999;
@@ -1040,15 +1055,20 @@ header .sub_menu div:hover a{ color: #FFFFFF; }
 .case-study .thong-tin a{
     color: #000;
 }
-.case-study .nd-anh{
+.case-study .nd-anh div{
     overflow: hidden;
+    margin-top: 15px;
 }
 .case-study .nd-sl img{
     transition: all 0.3s ease;
 }
 .case-study .nd-sl:hover img{
     opacity: 0.95;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .case-study .nd-sl:hover .chu_to a{
     color: #3CA798;
@@ -1291,10 +1311,14 @@ footer .logo2{
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color:#fff;
-    border-radius: 10px !important;
-    margin-top: 2px;
+    /* border-radius: 10px !important;
+     margin-top: 2px;
     margin-left: 5px;
+    margin-right: 0px; */
     margin-right: 0px;
+    margin-top: 0px;
+    padding: 13px 0px 0px 0px;
+    border: none;
 }
 .select2-container .select2-search--inline {
     text-align: center;
@@ -1331,7 +1355,7 @@ footer .logo2{
     padding: 0px;
     position: absolute;
     top: 12px;
-    right: 16px;
+    right: 5px;
 }
 .select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar{
     background-color: #5a5353;
@@ -1347,6 +1371,31 @@ footer .logo2{
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     position: relative;
     top: -1px;
+    display: none;
+}
+.select2-selection__choice::before{
+    content:", "
+}
+.select2-selection__clear + span::before{
+    content:""
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    margin-left: 12px;
+    padding: 14px 0px;
+}
+.select2-container--default .select2-selection--multiple {
+    overflow-y: hidden;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    float: none;
+}
+.select2-container .select2-search--inline {
+    position: absolute;
+    top: 5px;
+    width: 90%;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0px;
 }
 /* .select2-container--default .select2-search--inline .select2-search__field {
     width: 100% !important;
