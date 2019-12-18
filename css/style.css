@@ -1370,6 +1370,30 @@ footer .logo2{
         right: -47px;
     } */
 }
+@media only screen and (max-width: 1023px){
+    .navbar-toggle {
+        display: block;
+    }
+    .mainnav {
+        position: relative;
+    }
+    .mainnav-collapse {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3CA798 ;
+    }
+    .mainnav-item a{
+        color: #fff;
+    }
+    .mainnav-item .sub_menu{
+        left: -121px;
+        top: 0px;
+    }
+}
+
 @media only screen and (max-width: 768px){
     .case-study .slide4{
         height: 800px;
@@ -1409,6 +1433,29 @@ footer .logo2{
     }
     .swiper-button-prev3{
         left:-35px;
+    }
+    header .we_stream {
+        flex-direction: column;
+    }
+    .mainnav .mainnav-item {
+        padding: 15px 59px;
+    }
+    header .sub_menu {
+        box-shadow: none;  
+        position: relative;
+    }
+    .mainnav-item .sub_menu {
+        left: 0px;
+        top: 0px;
+    }
+    header .sub_menu div {
+        background:#33947c;
+    }
+    header .we_stream:hover .sub_menu {
+        padding-top: 10px;
+    }
+    header .sub_menu a {
+        color: #fff;
     }
     /* .hoat-dong .nho5, .hoat-dong .nho6, .hoat-dong .nho7{ 
         display: none;
@@ -1496,28 +1543,5 @@ footer .logo2{
     }
 }
 
-@media only screen and (max-width: 1023px){
-    .navbar-toggle {
-        display: block;
-    }
-    .mainnav {
-        position: relative;
-    }
-    .mainnav-collapse {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #3CA798 ;
-    }
-    .mainnav-item a{
-        color: #fff;
-    }
-    .mainnav-item .sub_menu{
-        left: -121px;
-        top: 0px;
-    }
-}
 
 
